@@ -10,9 +10,12 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 import com.chandler.hibernate.app.entity.Customer;
-
+/**
+ * A class that runs the Database Operations via Hibernate for a business
+ * @author Chandler Broadwater
+ *
+ */
 public class CreateCustomer {
-
 	private static String firstName, lastName, email, phone, group, temp, change;
 	private static long social;
 	private static int update, choice;
