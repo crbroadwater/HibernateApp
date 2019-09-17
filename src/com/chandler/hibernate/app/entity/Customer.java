@@ -32,14 +32,14 @@ public class Customer {
 	private String groupName;
 	
 	@Column(name="social")
-	private int social;
+	private long social;
 	
 	public Customer() {
 		
 	}
 
 	public Customer(String firstName, String lastName, String email,
-			String phoneNumber, String groupName, int social) {
+			String phoneNumber, String groupName, long social) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -97,11 +97,11 @@ public class Customer {
 		this.groupName = groupName;
 	}
 
-	public int getSocial() {
+	public long getSocial() {
 		return social;
 	}
 
-	public void setSocial(int social) {
+	public void setSocial(long social) {
 		this.social = social;
 	}
 
